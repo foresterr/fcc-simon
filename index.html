@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>FCC project - Simon-like</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="tones">
+			<button id="C"></button>
+			<button id="B"></button>
+			<button id="A"></button>
+			<button id="E"></button>
+			<button id="A0"></button>
+		</div>
+		<div class="display">
+			<div class="row c">
+				<div class="cell on"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+			</div>
+			<div class="row b">
+				<div class="cell on"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+			</div>
+			<div class="row a">
+				<div class="cell on"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+			</div>
+			<div class="row e">
+				<div class="cell on"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+			</div>
+			<div class="row a0">
+				<div class="cell on"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+			</div>
+		</div>
+		<div class="controls">
+			<button>SYSTEMS TEST</button>
+			<button>START</button>
+			<div class="progress">00</div>
+			<button>RESET</button>
+			<button onclick="test.call(this);">STRICT MODE</button>
+		</div>
+	</div>
+  <script src="/src/simon.js"></script>
+</body>
+
+</html>

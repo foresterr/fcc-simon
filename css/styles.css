@@ -1,0 +1,183 @@
+body {
+  text-align: center;
+}
+.wrapper {
+  display: inline-block;
+  padding: 15px;
+  background: dimgray;
+  border-radius: 5px;
+}
+.tones {
+  float:left;
+  padding: 15px 22px 15px 8px;
+}
+.display {
+  float: left;
+  padding: 10px 15px 6px;
+  background: black;
+}
+.controls {
+  clear: both;
+  padding: 10px;
+  text-align: center;
+}
+.controls > button {
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  width: 120px;
+  height: 30px;
+  border: 4px solid #999999;
+  border-radius: 1px;
+  background: #cccccc; /*center off, 35%*/
+  box-shadow: 0 7px #808080; /*side, 20%*/
+  transition: all 0.15s;
+}
+.controls > button.on {
+  background: #ffffff; /*center on, 50%*/
+  border-color: #b3b3b3; /*wall on, 40%*/
+  box-shadow: 0 7px #999999; /*side on, 30%*/
+}
+.controls > button:active {
+  transform: translateY(4px);
+  background: #ffffff; /*center on, 50%*/
+  border-color: #b3b3b3; /*wall on, 40%*/
+  box-shadow: 0 3px #999999; /*side on, 30%*/
+}
+.controls > button.on:active {
+  border-color: #999999; /*wall on, 40%*/
+  background: #cccccc; /*center off, 35%*/
+  box-shadow: 0 3px #808080; /*side, 20%*/
+}
+.controls > button:focus {
+  outline: none;
+}
+.progress {
+  position: relative;
+  top: 8px;
+  font-family: 'VT323', monospace;
+  font-size: 48px;
+  display: inline-block;
+  color: green;
+  background: black;
+  border: 4px inset darkgray;
+  border-radius: 2px;
+  padding: 3px 5px 6px;
+}
+
+.row {
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+.cell {
+  display: inline-block;
+  margin: none;
+  padding: none;
+  background: tan;
+  border-style: none;
+  width: 100px;
+  height: 50px;
+}
+
+.row.c > .cell.on {
+  background: #ff0000;
+}
+.row.b > .cell.on {
+  background: #ff00ff;
+}
+.row.a > .cell.on {
+  background: #ff8000;
+}
+.row.e > .cell.on {
+  background: #ffffff;
+}
+.row.a0 > .cell.on {
+  background: #ffff00;
+}
+
+.tones > button {
+  display: block;
+  width: 100px;
+  height: 50px;
+  border:8px solid;
+  border-radius: 3px;
+  margin-bottom: 12px;
+  transition: all 0.15s;
+}
+.tones > button:active {
+  transform: translateY(5px);
+}
+.tones > button:focus {
+  outline: none;
+}
+
+#B {
+  background: #b300b3; /*center off, 35%*/
+  border-color:  #990099; /*wall, 30%*/
+  box-shadow: 0 10px #660066; /*side, 20%*/
+}
+#B:active {
+  background: #ff00ff; /*center on, 50%*/
+  border-color: #cc00cc; /*wall on, 40%*/
+  box-shadow: 0 5px #990099; /*side on, 30%*/
+}
+#C {
+  background: #b30009; /*center off, 35%*/
+  border-color:  #990008; /*wall, 30%*/
+  box-shadow: 0 10px #660005; /*side, 20%*/
+}
+#C:active {
+  background: #ff0000; /*center on, 50%*/
+  border-color: #cc000a; /*wall on, 40%*/
+  box-shadow: 0 5px #990008; /*side on, 30%*/
+}
+#A {
+  background: #b35f00; /*center off, 35%*/
+  border-color:  #995200; /*wall, 30%*/
+  box-shadow: 0 10px #663600; /*side, 20%*/
+}
+#A:active {
+  background: #ff8000; /*center on, 50%*/
+  border-color: #cc6d00; /*wall on, 40%*/
+  box-shadow: 0 5px #995200; /*side on, 30%*/
+}
+#A0 {
+  background: #b1b102; /*center off, 35%*/
+  border-color:  #979702; /*wall, 30%*/
+  box-shadow: 0 10px #656501; /*side, 20%*/
+}
+#A0:active {
+  background: #ffff00; /*center on, 50%*/
+  border-color: #caca02; /*wall on, 40%*/
+  box-shadow: 0 5px #979702; /*side on, 30%*/
+}
+#E {
+  background: #cccccc; /*center off, 35%*/
+  border-color:  #999999; /*wall, 30%*/
+  box-shadow: 0 10px #808080; /*side, 20%*/
+}
+#E:active {
+  background: #ffffff; /*center on, 50%*/
+  border-color: #b3b3b3; /*wall on, 40%*/
+  box-shadow: 0 5px #999999; /*side on, 30%*/
+}
+
+@media (max-width: 1241px) {
+  .display {
+    display: none;
+  }
+
+  .controls {
+    clear: none;
+    float: left;
+    padding-top: 40px;
+  }
+
+  .controls > button {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .progress {
+    margin-bottom: 20px;
+  }
+}
